@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+}
