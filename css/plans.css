@@ -4,23 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkmagenta;
+  background: #f6f6f6;
 }
 
 .title {
   width: 50%;
-  min-height: 10vh;
+  min-height: 9vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
 }
 
 .title__header {
   width: 100%;
   height: auto;
-  background-color: cadetblue;
   display: flex;
   justify-content: center;
 }
@@ -40,7 +38,6 @@
 .title__paragraph {
   width: 100%;
   height: auto;
-  background-color: chartreuse;
   display: flex;
   justify-content: center;
 }
@@ -60,7 +57,6 @@
 .plans__container {
   width: 90%;
   min-height: 80vh;
-  background-color: chocolate;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -69,23 +65,139 @@
 
 .plans__boxes {
   width: 330px;
-  height: 700px;
-  background-color: cornsilk;
+  min-height: 700px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2px;
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.plans__boxes:hover {
+  border: 2px solid #f53838;
+}
+
+.plans__image {
+  margin-top: 20px;
 }
 
 .plans__content {
   width: 90%;
   min-height: 65%;
-  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.plans__content h4 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.3vh;
+  /* identical to box height, or 167% */
+  text-align: center;
+  color: #0b132a;
+}
+
+.plans__suggestions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.plans__suggestions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: -10px;
+}
+
+.plans__suggestions img {
+  margin-right: 15px;
+}
+
+.plans__suggestions p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  /* identical to box height, or 214% */
+  color: #4f5665;
 }
 
 .plans__price {
   width: 90%;
-  height: 25%;
-  background-color: darkorchid;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans__price-tag {
+}
+
+.plans__price-tag p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vh;
+  /* identical to box height, or 120% */
+
+  text-align: center;
+
+  color: #0b132a;
+}
+
+.plans__button {
+  width: 65%;
+  height: 9vh;
+  position: relative;
+}
+
+.plans__button button {
+  width: 100%;
+  height: 70%;
+  border: 2px solid #f53838;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vh;
+  /* identical to box height */
+  background-color: #fff;
+  color: #f53838;
+
+  position: relative;
+  z-index: 2;
+}
+
+.plans__button-shadow {
+  width: 70%;
+  height: 50%;
+  /* display: flex; */
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(100px);
+  border-radius: 60px;
+  z-index: 1;
+}
+
+.plans__button button:hover {
+  cursor: pointer;
+  background-color: #f53838;
+  color: #fff;
+}
+
+.plans__button:hover .plans__button-shadow {
+  filter: blur(15px);
 }

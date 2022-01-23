@@ -1,0 +1,48 @@
+.global {
+  width: 90%;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.global__map {
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.global__map img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.global__companies {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.global__company-container {
+  height: 10vh;
+  max-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .global__map {
+    height: 50%;
+  }
+
+  .global__company-container {
+    height: 7vh;
+  }
+}

@@ -49,6 +49,10 @@ nav {
   color: #0b132a;
 }
 
+.nav__h3:hover {
+  cursor: pointer;
+}
+
 .nav__lists-container {
   width: 40%;
 }
@@ -73,6 +77,10 @@ nav ul {
 }
 
 .nav__ul li:hover {
+  cursor: pointer;
+}
+
+.nav__ul li:hover {
   color: #f53855;
 }
 
@@ -81,6 +89,10 @@ nav ul {
   height: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.nav__button-container button:hover {
+  cursor: pointer;
 }
 
 .button__sign-in {
@@ -124,6 +136,10 @@ nav ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.toggle-button:hover {
+  cursor: pointer;
 }
 
 .toggle-button .bar {
@@ -255,6 +271,10 @@ nav ul {
   color: #fff;
 }
 
+.section__button:hover {
+  cursor: pointer;
+}
+
 .button-shadow {
   width: 90%;
   height: 70%;
@@ -264,8 +284,12 @@ nav ul {
   z-index: 1;
 
   background: rgba(245, 56, 56, 0.35);
-  filter: blur(15px);
+  filter: blur(100px);
   border-radius: 10px;
+}
+
+.section__button-container:hover .button-shadow {
+  filter: blur(10px);
 }
 
 .platform {
