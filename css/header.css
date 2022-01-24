@@ -246,6 +246,7 @@ nav ul {
   font-style: normal;
   font-weight: normal;
   font-size: 2vh;
+  line-height: 4vh;
   /* or 187% */
   color: #4f5665;
 }
@@ -418,6 +419,7 @@ nav ul {
   font-style: normal;
   font-weight: normal;
   font-size: 2vh;
+  line-height: 4vh;
   /* or 187% */
 
   color: #4f5665;
