@@ -439,6 +439,10 @@ nav ul {
   margin-left: 10px;
 }
 
+.section-2__content-row p:hover {
+  font-size: 2.1vh;
+}
+
 @media screen and (max-width: 750px) {
   .section-2 {
     flex-direction: column;

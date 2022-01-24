@@ -1,0 +1,134 @@
+.footer {
+  width: 90%;
+  min-height: 60vh;
+  min-height: 40vh;
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 30px;
+}
+
+.footer__left {
+  width: 50%;
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.footer__title {
+  display: flex;
+  align-items: center;
+}
+
+.footer__title:hover {
+  cursor: pointer;
+}
+
+.footer__title-image {
+  margin-right: 10px;
+}
+
+.footer__title h4 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2vh;
+}
+
+.footer__left p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vh;
+  line-height: 2.5vh;
+  color: #4f5665;
+}
+
+.footer__icons-container {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  width: 33.6px;
+  height: 33.6px;
+  /* max-width: 40px;
+  max-height: 40px; */
+  border-radius: 50%;
+  background-color: #f53838;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+}
+
+.footer-icon img {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer__copyright p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  color: #afb5c0;
+}
+
+.footer__right {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__right-content {
+  width: 30%;
+  height: 50vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.footer__right-content h5 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vh;
+  color: #0b132a;
+}
+
+.footer__right-content p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8vh;
+  line-height: 3.5vh;
+  color: #4f5665;
+}
+
+.footer__right-content p:hover {
+  cursor: pointer;
+  color: #f53838;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__left {
+    width: 90%;
+  }
+
+  .footer__right {
+    width: 90%;
+  }
+}

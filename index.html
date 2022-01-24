@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="css/plans.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/feedbacks.css" />
+    <link rel="stylesheet" href="css/subscribe.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/css/all.css" />
     <title>Freebie</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="nav">
         <div class="nav__wrapper">
           <div class="nav__title">
@@ -43,10 +45,10 @@
           <div class="nav__lists-container">
             <ul class="nav__ul">
               <li>About</li>
-              <li>Features</li>
-              <li>Pricing</li>
-              <li>Testimonials</li>
-              <li>Help</li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#plans">Pricing</a></li>
+              <li><a href="#feedbacks">Testimonials</a></li>
+              <li><a href="#footer">Help</a></li>
             </ul>
           </div>
           <div class="nav__button-container">
@@ -125,7 +127,7 @@
         </div>
       </div>
 
-      <section class="section-2">
+      <section class="section-2" id="features">
         <div class="section-2__image">
           <img src="images/header/Illustration 2.svg" />
         </div>
@@ -169,7 +171,7 @@
     </header>
 
     <!-- Plans -->
-    <section class="plans">
+    <section class="plans" id="plans">
       <div class="title">
         <div class="title__header">
           <h1>Choose Your Plan</h1>
@@ -341,7 +343,8 @@
       </div>
     </section>
 
-    <section class="feedbacks">
+    <!-- Feedbacks -->
+    <section class="feedbacks" id="feedbacks">
       <div class="title">
         <div class="title__header">
           <h1>
@@ -448,6 +451,76 @@
       </div>
       <div></div>
     </section>
+
+    <div class="subscribe">
+      <div class="subscribe__content">
+        <h3>
+          Subscribe Now for<br />
+          Get Special Features!
+        </h3>
+        <p>Let's subscribe with us and find the fun.</p>
+      </div>
+      <div class="subscribe__button">
+        <button>Subscribe Now</button>
+        <div class="subscribe__button-shadow"></div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer__left">
+        <div class="footer__title">
+          <div class="footer__title-image">
+            <img src="images/footer/lasles-icon.svg" alt="lasles icon" />
+          </div>
+          <h4>
+            <a href="#header">Lasles<strong>VPN</strong></a>
+          </h4>
+        </div>
+        <p>
+          <strong>LaslesVPN</strong> is a private virtual network that<br />
+          has unique features and has high security.
+        </p>
+        <div class="footer__icons-container">
+          <div class="footer__icon">
+            <img src="images/footer/facebook-icon.svg" alt="facebook icon" />
+          </div>
+          <div class="footer__icon">
+            <img src="images/footer/twitter-icon.svg" alt="facebook icon" />
+          </div>
+          <div class="footer__icon">
+            <img src="images/footer/instagram-icon.svg" alt="facebook icon" />
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>©2020LaslesVPN</p>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-content">
+          <h5>Product</h5>
+          <p>Download</p>
+          <p>Pricing</p>
+          <p>Locations</p>
+          <p>Server</p>
+          <p>Countries</p>
+          <p>Blog</p>
+        </div>
+        <div class="footer__right-content">
+          <h5>Engage</h5>
+          <p>LaslesVPN ?</p>
+          <p>FAQ</p>
+          <p>Tutorials</p>
+          <p>About Us</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+        </div>
+        <div class="footer__right-content">
+          <h5>Earn Money</h5>
+          <p>Affiliate</p>
+          <p>Become Partner</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

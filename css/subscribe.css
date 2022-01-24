@@ -1,0 +1,96 @@
+.subscribe {
+  width: 85%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 253, 254);
+  margin-bottom: 5vh;
+}
+
+.subscribe__content {
+  width: 35%;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5vh;
+}
+
+.subscribe__content h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5vh;
+}
+
+.subscribe__content p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8vh;
+  margin: 0;
+  color: #4f5665;
+}
+
+.subscribe__button {
+  width: 30%;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.subscribe__button button {
+  width: 80%;
+  height: 9vh;
+  background: #f53838;
+  border-radius: 10px;
+  border-style: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vh;
+  color: #fff;
+}
+
+.subscribe__button-shadow {
+  width: 75%;
+  height: 5vh;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(100px);
+  border-radius: 10px;
+}
+
+.subscribe__button:hover .subscribe__button-shadow {
+  filter: blur(7px);
+}
+
+.subscribe__button button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe__content {
+    width: 90%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe__button {
+    width: 50%;
+    margin: 0;
+  }
+}
