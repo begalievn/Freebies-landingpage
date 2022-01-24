@@ -32,6 +32,10 @@ nav {
   align-items: center;
 }
 
+.nav__title:hover {
+  cursor: pointer;
+}
+
 .nav__title-icon {
   width: 20%;
   height: 100%;
